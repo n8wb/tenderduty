@@ -3,10 +3,11 @@ package tenderduty
 import (
 	"context"
 	"encoding/hex"
-	"errors"
 	"fmt"
 	"strings"
 	"time"
+
+	"github.com/cockroachdb/errors"
 
 	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
 	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
@@ -168,6 +169,7 @@ func getVal(ctx context.Context, client *rpchttp.HTTP, valoper string) (pub []by
 	val := &staking.QueryValidatorResponse{}
 	err = val.Unmarshal(resp.Response.Value)
 	if err != nil {
+		err = errors.Wrap(err, "QueryValidatorResponse")
 		return
 	}
 	if val.Validator.ConsensusPubkey == nil {
