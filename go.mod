@@ -3,7 +3,7 @@ module github.com/blockpane/tenderduty/v2
 go 1.23
 
 require (
-	github.com/PagerDuty/go-pagerduty v1.5.1
+	github.com/PagerDuty/go-pagerduty v1.8.0
 	github.com/cosmos/cosmos-sdk v0.50.13
 	github.com/go-passwd/validator v0.0.0-20180902184246-0b4c967e436b
 	github.com/go-telegram-bot-api/telegram-bot-api/v5 v5.5.1
@@ -65,7 +65,7 @@ require (
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/dvsekhvalnov/jose2go v1.6.0 // indirect
 	github.com/emicklei/dot v1.6.2 // indirect
-	github.com/fatih/color v1.15.0 // indirect
+	github.com/fatih/color v1.16.0 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/getsentry/sentry-go v0.27.0 // indirect
@@ -80,7 +80,7 @@ require (
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/google/btree v1.1.3 // indirect
 	github.com/google/go-cmp v0.6.0 // indirect
-	github.com/google/go-querystring v1.0.0 // indirect
+	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/gorilla/handlers v1.5.1 // indirect
 	github.com/gorilla/mux v1.8.0 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.4.0 // indirect
